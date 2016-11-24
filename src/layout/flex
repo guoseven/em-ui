@@ -1,0 +1,24 @@
+html {
+  font-size: 20px; }
+
+body {
+  font-size: 0.8rem;
+  margin: 0px;
+  line-height: 2rem; }
+
+.flex {
+  display: flex; }
+
+.row {
+  flex-direction: row; }
+
+.row-rev {
+  flex-direction: row-reverse; }
+
+.col {
+  flex-display: column; }
+
+.col-rev {
+  flex-display: column-reverse; }
+
+/*# sourceMappingURL=flex.map */

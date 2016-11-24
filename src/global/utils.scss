@@ -1,6 +1,16 @@
-.t-left{
+.t-left {
   text-align: left;
 }
-.t-right{
+
+.t-right {
   text-align: right;
+}
+
+@for $i from 1 through 10 {
+  .wid-#{$i} {
+    width: (10% * $i);
+  }
+  .hei-#{$i} {
+    height: (10% * $i);
+  }
 }

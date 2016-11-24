@@ -1,0 +1,44 @@
+@import "../global/rem";
+
+.row {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+  flex-wrap: nowrap;
+
+}
+
+.row-rev {
+  flex-direction: row-reverse;
+}
+
+.align-top {
+  align-items: flex-start;
+}
+
+.align-bottom {
+  align-items: flex-end;
+}
+@for $i from 1 through 5 {
+  .row-cell-#{$i} {
+    flex-grow: $i;
+    text-align: center;
+  }
+}
+
+.col {
+  @extend .row;
+  flex-direction: column;
+  align-content: stretch;
+
+}
+
+@for $i from 1 through 5 {
+  .col-cell-#{$i} {
+    flex-grow: $i;
+    text-align: center;
+    width: 100%;
+  }
+}
