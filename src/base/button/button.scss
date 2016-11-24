@@ -1,0 +1,76 @@
+@import "../../global/rem";
+@import "../../global/color";
+
+$btn_font_size: 0.8em;
+
+.btn {
+  border-radius: 0.3rem;
+  -webkit-border-radius: 0.3rem;
+  -moz-border-radius: 0.3rem;
+  border: 0;
+  color: #FFFFFF;
+  font-size: $btn_font_size;
+  outline: none;
+  width: 98%;
+  margin: 1%;
+}
+
+.btn-primary {
+  background-color: map_get($primary_color, normal);
+  height: 2rem;
+  &:active {
+    background-color: map_get($primary_color, active);
+  }
+  &:disabled {
+    background-color: map_get($primary_color, disable);
+
+  }
+}
+
+.btn-success {
+  background-color: map_get($success_color, normal);
+  height: 2rem;
+  &:active {
+    background-color: map_get($success_color, active);
+  }
+  &:disabled {
+    background-color: map_get($success_color, disable);
+
+  }
+}
+
+.btn-warning {
+  background-color: map_get($warning_color, normal);
+  height: 2rem;
+  &:active {
+    background-color: map_get($warning_color, active);
+  }
+  &:disabled {
+    background-color: map_get($warning_color, disable);
+
+  }
+}
+
+.btn-danger {
+  background-color: map_get($danger_color, normal);
+  height: 2rem;
+  &:active {
+    background-color: map_get($danger_color, active);
+  }
+  &:disabled {
+    background-color: map_get($danger_color, disable);
+
+  }
+}
+
+.btn-info {
+  background-color: map_get($info_color, normal);
+  height: 2rem;
+  &:active {
+    background-color: map_get($info_color, active);
+  }
+  &:disabled {
+    background-color: map_get($info_color, disable);
+
+  }
+}
