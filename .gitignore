@@ -4,3 +4,4 @@ EMUI.iml
 *.css
 .sass-cache
 !emui.css
+node_modules

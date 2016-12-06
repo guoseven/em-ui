@@ -10,7 +10,10 @@ $color_right: green;
   padding: 0px;
   text-align: center;
   border: 0px;
-  border-bottom: 1px solid #eeeeee;
+  border: 1px solid #eeeeee;
+  border-radius: 0.3rem;
+  -webkit-border-radius: 0.3rem;
+  -moz-border-radius: 0.3rem;
   outline: none;
   font-size: $input_font_size;
   &:read-only {
@@ -21,7 +24,8 @@ $color_right: green;
 
 .ipt[type=text], .ipt[type=password], .ipt[type=number] {
   height: 2rem;
-  width: 100%;
+  width: 97%;
+  margin: 1%;
 }
 
 .ipt[type=checkbox], .ipt[type=radio] {
@@ -96,7 +100,7 @@ $color_right: green;
 .ipt-primary {
 
   &:focus {
-    border-bottom: 1px solid map_get($primary_color, active);
+    border: 1px solid map_get($primary_color, active);
   }
 
 }
@@ -104,27 +108,33 @@ $color_right: green;
 .ipt-success {
 
   &:focus {
-    border-bottom: 1px solid map_get($success_color, active);
+    border: 1px solid map_get($success_color, active);
   }
 }
 
 .ipt-info {
 
   &:focus {
-    border-bottom: 1px solid map_get($info_color, active);
+    border: 1px solid map_get($info_color, active);
   }
 }
 
 .ipt-warning {
 
   &:focus {
-    border-bottom: 1px solid map_get($warning_color, active);
+    border: 1px solid map_get($warning_color, active);
   }
 }
 
 .ipt-danger {
   &:focus {
-    border-bottom: 1px solid map_get($danger_color, active);
+    border: 1px solid map_get($danger_color, active);
+  }
+}
+
+.ipt-default {
+  &:focus {
+    border: 1px solid map_get($default_color, active);
   }
 }
 
@@ -133,7 +143,7 @@ $color_right: green;
   height: 2rem;
 
   color: $color_error;
-  border-bottom: 1px solid $color_error;
+  border: 1px solid $color_error;
 
 }
 
@@ -141,6 +151,6 @@ $color_right: green;
   height: 2rem;
 
   color: $color_right;
-  border-bottom: 1px solid $color_right;
+  border: 1px solid $color_right;
 
 }

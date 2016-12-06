@@ -2,6 +2,9 @@
 @import "../../global/color";
 
 $btn_font_size: 0.8em;
+$btn_border_width:1px;
+
+
 
 .btn {
   border-radius: 0.3rem;
@@ -12,7 +15,10 @@ $btn_font_size: 0.8em;
   font-size: $btn_font_size;
   outline: none;
   width: 98%;
+  padding: 0.5rem;
   margin: 1%;
+  border: $btn_border_width;
+  border-color: map_get($primary_color, active);
 }
 
 .btn-primary {
@@ -71,6 +77,19 @@ $btn_font_size: 0.8em;
   }
   &:disabled {
     background-color: map_get($info_color, disable);
+
+  }
+}
+.btn-default {
+  color: #000000;
+  background-color: map_get($default_color, normal);
+  height: 2rem;
+  &:active {
+    background-color: map_get($default_color, active);
+  }
+  &:disabled {
+    color: #eeeeee;
+    background-color: map_get($default_color, disable);
 
   }
 }

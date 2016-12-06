@@ -2,9 +2,10 @@ html {
   font-size: 20px; }
 
 body {
-  font-size: 0.8rem;
+  font-size: 1rem;
   margin: 0px;
-  line-height: 2rem; }
+  line-height: 2rem;
+  font-family: "Microsoft YaHei"; }
 
 .t-left {
   text-align: left; }
@@ -71,14 +72,45 @@ body {
 
 .hei-10 {
   height: 100%; }
+
+.margin {
+  margin: 0.5rem; }
+
+.margin-left {
+  margin-left: 0.5rem; }
+
+.margin-right {
+  margin-right: 0.5rem; }
+
+.margin-top {
+  margin-top: 0.5rem; }
+
+.margin-bottom {
+  margin-bottom: 0.5rem; }
+
+.padding {
+  padding: 0.5rem; }
+
+.padding-left {
+  padding-left: 0.5rem; }
+
+.padding-right {
+  margin-right: 0.5rem; }
+
+.padding-top {
+  margin-top: 0.5rem; }
+
+.padding-bottom {
+  margin-bottom: 0.5rem; }
 
 html {
   font-size: 20px; }
 
 body {
-  font-size: 0.8rem;
+  font-size: 1rem;
   margin: 0px;
-  line-height: 2rem; }
+  line-height: 2rem;
+  font-family: "Microsoft YaHei"; }
 
 .t-left {
   text-align: left; }
@@ -146,11 +178,44 @@ body {
 .hei-10 {
   height: 100%; }
 
+.margin {
+  margin: 0.5rem; }
+
+.margin-left {
+  margin-left: 0.5rem; }
+
+.margin-right {
+  margin-right: 0.5rem; }
+
+.margin-top {
+  margin-top: 0.5rem; }
+
+.margin-bottom {
+  margin-bottom: 0.5rem; }
+
+.padding {
+  padding: 0.5rem; }
+
+.padding-left {
+  padding-left: 0.5rem; }
+
+.padding-right {
+  margin-right: 0.5rem; }
+
+.padding-top {
+  margin-top: 0.5rem; }
+
+.padding-bottom {
+  margin-bottom: 0.5rem; }
+
 .ipt {
   padding: 0px;
   text-align: center;
   border: 0px;
-  border-bottom: 1px solid #eeeeee;
+  border: 1px solid #eeeeee;
+  border-radius: 0.3rem;
+  -webkit-border-radius: 0.3rem;
+  -moz-border-radius: 0.3rem;
   outline: none;
   font-size: 0.8rem; }
   .ipt:read-only {
@@ -159,7 +224,8 @@ body {
 
 .ipt[type=text], .ipt[type=password], .ipt[type=number] {
   height: 2rem;
-  width: 100%; }
+  width: 97%;
+  margin: 1%; }
 
 .ipt[type=checkbox], .ipt[type=radio] {
   display: none; }
@@ -223,37 +289,41 @@ body {
   box-shadow: 0 0 1px #4cda60; }
 
 .ipt-primary:focus {
-  border-bottom: 1px solid #0059a6; }
+  border: 1px solid #2980b9; }
 
 .ipt-success:focus {
-  border-bottom: 1px solid #009c00; }
+  border: 1px solid #27ae60; }
 
 .ipt-info:focus {
-  border-bottom: 1px solid #00aee2; }
+  border: 1px solid #8e44ad; }
 
 .ipt-warning:focus {
-  border-bottom: 1px solid #f18d00; }
+  border: 1px solid #f39c12; }
 
 .ipt-danger:focus {
-  border-bottom: 1px solid #d60700; }
+  border: 1px solid #c0392b; }
+
+.ipt-default:focus {
+  border: 1px solid #bdc3c7; }
 
 .ipt-error {
   height: 2rem;
   color: red;
-  border-bottom: 1px solid red; }
+  border: 1px solid red; }
 
 .ipt-right {
   height: 2rem;
   color: green;
-  border-bottom: 1px solid green; }
+  border: 1px solid green; }
 
 html {
   font-size: 20px; }
 
 body {
-  font-size: 0.8rem;
+  font-size: 1rem;
   margin: 0px;
-  line-height: 2rem; }
+  line-height: 2rem;
+  font-family: "Microsoft YaHei"; }
 
 .btn {
   border-radius: 0.3rem;
@@ -264,55 +334,69 @@ body {
   font-size: 0.8em;
   outline: none;
   width: 98%;
-  margin: 1%; }
+  padding: 0.5rem;
+  margin: 1%;
+  border: 1px;
+  border-color: #2980b9; }
 
 .btn-primary {
-  background-color: #2b71a9;
+  background-color: #3498db;
   height: 2rem; }
   .btn-primary:active {
-    background-color: #0059a6; }
+    background-color: #2980b9; }
   .btn-primary:disabled {
-    background-color: rgba(43, 113, 169, 0.5); }
+    background-color: #8fd2ea; }
 
 .btn-success {
-  background-color: #449d44;
+  background-color: #2ecc71;
   height: 2rem; }
   .btn-success:active {
-    background-color: #009c00; }
+    background-color: #27ae60; }
   .btn-success:disabled {
-    background-color: rgba(68, 157, 68, 0.5); }
+    background-color: #76e2a1; }
 
 .btn-warning {
-  background-color: #f0ad4e;
+  background-color: #f1c40f;
   height: 2rem; }
   .btn-warning:active {
-    background-color: #f18d00; }
+    background-color: #f39c12; }
   .btn-warning:disabled {
-    background-color: rgba(240, 173, 78, 0.5); }
+    background-color: #ead88b; }
 
 .btn-danger {
-  background-color: #d43f62;
+  background-color: #e74c3c;
   height: 2rem; }
   .btn-danger:active {
-    background-color: #d60700; }
+    background-color: #c0392b; }
   .btn-danger:disabled {
-    background-color: rgba(212, 63, 98, 0.5); }
+    background-color: #efaca8; }
 
 .btn-info {
-  background-color: #5bc0de;
+  background-color: #9b59b6;
   height: 2rem; }
   .btn-info:active {
-    background-color: #00aee2; }
+    background-color: #8e44ad; }
   .btn-info:disabled {
-    background-color: rgba(91, 192, 222, 0.5); }
+    background-color: #cea5e5; }
+
+.btn-default {
+  color: #000000;
+  background-color: #ecf0f1;
+  height: 2rem; }
+  .btn-default:active {
+    background-color: #bdc3c7; }
+  .btn-default:disabled {
+    color: #eeeeee;
+    background-color: #ffffff; }
 
 html {
   font-size: 20px; }
 
 body {
-  font-size: 0.8rem;
+  font-size: 1rem;
   margin: 0px;
-  line-height: 2rem; }
+  line-height: 2rem;
+  font-family: "Microsoft YaHei"; }
 
 .row, .col {
   display: flex;
@@ -379,5 +463,3 @@ body {
   flex-grow: 5;
   text-align: center;
   width: 100%; }
-
-/*# sourceMappingURL=emui.css.map */

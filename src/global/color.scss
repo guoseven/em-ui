@@ -1,7 +1,8 @@
-$primary_color: (normal:rgba(43,113,169,1), active:rgba(0,89,166,1), disable:rgba(43,113,169,0.5));
-$success_color: (normal:rgba(68,157,68,1), active:rgba(0,156,0,1), disable:rgba(68,157,68,0.5));
-$warning_color: (normal:rgba(240,173,78,1), active:rgba(241,141,0,1), disable:rgba(240,173,78,0.5));
-$danger_color: (normal:rgba(212,63,98,1), active:rgba(214,7,0,1), disable:rgba(212,63,98,0.5));
-$info_color: (normal:rgba(91,192,222,1), active:rgba(0,174,226,1), disable:rgba(91,192,222,0.5));
+$primary_color: (normal:#3498db, active:#2980b9, disable:#8fd2ea);
+$success_color: (normal:#2ecc71, active:#27ae60, disable:#76e2a1);
+$warning_color: (normal:#f1c40f, active:#f39c12, disable:#ead88b);
+$danger_color: (normal:#e74c3c, active:#c0392b, disable:#efaca8);
+$info_color: (normal:#9b59b6, active:#8e44ad, disable:#cea5e5);
+$default_color: (normal:#ecf0f1, active:#bdc3c7, disable:#ffffff);
 
 
