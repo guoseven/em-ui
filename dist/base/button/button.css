@@ -1,0 +1,72 @@
+html {
+  font-size: 20px; }
+
+body {
+  font-size: 1rem;
+  margin: 0px;
+  line-height: 2rem;
+  font-family: "Microsoft YaHei"; }
+
+.btn {
+  border-radius: 0.3rem;
+  -webkit-border-radius: 0.3rem;
+  -moz-border-radius: 0.3rem;
+  border: 0;
+  color: #FFFFFF;
+  font-size: 0.8em;
+  outline: none;
+  width: 98%;
+  padding: 0.5rem;
+  margin: 1%;
+  border: 1px;
+  border-color: #2980b9; }
+
+.btn-primary {
+  background-color: #3498db;
+  height: 2rem; }
+  .btn-primary:active {
+    background-color: #2980b9; }
+  .btn-primary:disabled {
+    background-color: #8fd2ea; }
+
+.btn-success {
+  background-color: #2ecc71;
+  height: 2rem; }
+  .btn-success:active {
+    background-color: #27ae60; }
+  .btn-success:disabled {
+    background-color: #76e2a1; }
+
+.btn-warning {
+  background-color: #f1c40f;
+  height: 2rem; }
+  .btn-warning:active {
+    background-color: #f39c12; }
+  .btn-warning:disabled {
+    background-color: #ead88b; }
+
+.btn-danger {
+  background-color: #e74c3c;
+  height: 2rem; }
+  .btn-danger:active {
+    background-color: #c0392b; }
+  .btn-danger:disabled {
+    background-color: #efaca8; }
+
+.btn-info {
+  background-color: #9b59b6;
+  height: 2rem; }
+  .btn-info:active {
+    background-color: #8e44ad; }
+  .btn-info:disabled {
+    background-color: #cea5e5; }
+
+.btn-default {
+  color: #000000;
+  background-color: #ecf0f1;
+  height: 2rem; }
+  .btn-default:active {
+    background-color: #bdc3c7; }
+  .btn-default:disabled {
+    color: #eeeeee;
+    background-color: #ffffff; }
