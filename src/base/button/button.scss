@@ -19,6 +19,8 @@ $btn_border_width:1px;
   margin: 1%;
   border: $btn_border_width;
   border-color: map_get($primary_color, active);
+  transition: background-color 0.1s ease;
+
 }
 
 .btn-primary {
