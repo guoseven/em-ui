@@ -32,9 +32,9 @@ gulp.task('sassfile', function () {
  * 打包压缩的css
  */
 gulp.task('build', function () {
-    return gulp.src('./src/emui.scss')
+    return gulp.src('./index.scss')
         .pipe(sass())
         .pipe(min_css())
-        .pipe(rename({suffix: '.min'}))
+        .pipe(rename('emui.min.css'))
         .pipe(gulp.dest('./dist'));
 })
