@@ -14,8 +14,8 @@ gulp.task('watch', function () {
             baseDir: "."
         }
     });
-    gulp.watch("src/**/*.scss", ['sassfile']).on('change', reload);
-    gulp.watch("src/excamp/*.html").on('change', reload);
+    gulp.watch("src/*/*/*.scss", ['sassfile']).on('change', reload);
+    gulp.watch("src/example/*.html").on('change', reload);
 });
 /**
  * 将sass转化为css

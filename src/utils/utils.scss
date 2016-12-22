@@ -1,31 +1,31 @@
 @for $i from 1 through 5 {
   .m-l-#{$i} {
-    margin-left: 10%*$i;
+    margin-left: $i / 10;
   }
   .m-r-#{$i} {
-    margin-right: 10%*$i;
+    margin-right: $i / 10;
   }
   .m-t-#{$i} {
-    margin-top: 10%*$i;
+    margin-top: $i / 10;
   }
   .m-b-#{$i} {
-    margin-bottom: 10%*$i;
+    margin-bottom: $i / 10;
   }
 
   .p-l-#{$i} {
-    padding-left: 10%*$i;
+    padding-left: $i / 10;
   }
   .p-r-#{$i} {
-    padding-right: 10%*$i;
+    padding-right: $i / 10;
   }
   .p-t-#{$i} {
-    padding-top: 10%*$i;
+    padding-top: $i / 10;
   }
   .p-b-#{$i} {
-    padding-bottom: 10%*$i;
+    padding-bottom: $i / 10;
   }
 
-  .fulll-#{$i} {
+  .full-#{$i} {
     width: 10%*$i;
   }
 

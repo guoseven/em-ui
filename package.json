@@ -1,6 +1,6 @@
 {
   "name": "@followwinter/em-ui",
-  "version": "1.0.9",
+  "version": "1.0.12",
   "description": " 为了学习移动UI而创建的项目，模仿`bootstrapt`和`WeUI`",
   "main": "index.scss",
   "directories": {

@@ -22,8 +22,11 @@ $color_right: green;
 
 .ipt[type=text], .ipt[type=password], .ipt[type=number] {
   height: 2rem;
+  line-height: 2rem;
   width: 100%;
   box-sizing: border-box;
+  margin-top: 0.1rem;
+  margin-bottom: 0.1rem;
 }
 
 .ipt[type=checkbox], .ipt[type=radio] {
@@ -135,6 +138,15 @@ $color_right: green;
     border: 1px solid map_get($default_color, active);
   }
 }
+.ipt-outline{
+  border-radius: 0;
+  border: none;
+  border-bottom: 1px solid map_get($default_color,normal);
+  &:focus {
+    border-bottom: 1px solid map_get($default_color,active);
+  }
+}
+
 
 .ipt-error {
 
@@ -152,3 +164,4 @@ $color_right: green;
   border: 1px solid $color_right;
 
 }
+
