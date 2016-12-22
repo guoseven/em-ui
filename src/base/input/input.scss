@@ -7,14 +7,13 @@ $readonly_color: #aaaaaa;
 $color_error: red;
 $color_right: green;
 .ipt {
-  padding: 0px;
-  border: 0px;
   border: 1px solid #eeeeee;
   border-radius: 0.3rem;
   -webkit-border-radius: 0.3rem;
   -moz-border-radius: 0.3rem;
   outline: none;
   font-size: $input_font_size;
+  padding: 0px 0.5rem;
   &:read-only {
     height: 2rem;
     color: $readonly_color;
@@ -23,8 +22,8 @@ $color_right: green;
 
 .ipt[type=text], .ipt[type=password], .ipt[type=number] {
   height: 2rem;
-  width: 97%;
-  margin: 1%;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .ipt[type=checkbox], .ipt[type=radio] {
