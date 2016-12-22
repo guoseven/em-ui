@@ -1,6 +1,6 @@
 {
   "name": "@followwinter/em-ui",
-  "version": "1.0.12",
+  "version": "1.0.13",
   "description": " 为了学习移动UI而创建的项目，模仿`bootstrapt`和`WeUI`",
   "main": "index.scss",
   "directories": {
@@ -10,7 +10,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "gulp watch",
-    "build":"gulp build"
+    "build":"gulp build",
+    "pub":"npm publish --access=public"
   },
   "repository": {
     "type": "git",

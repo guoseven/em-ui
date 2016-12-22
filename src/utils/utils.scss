@@ -6,23 +6,23 @@
     margin-right: $i / 10;
   }
   .m-t-#{$i} {
-    margin-top: $i / 10;
+    margin-top: $i / 10 rem;
   }
   .m-b-#{$i} {
-    margin-bottom: $i / 10;
+    margin-bottom: $i / 10 rem;
   }
 
   .p-l-#{$i} {
-    padding-left: $i / 10;
+    padding-left: $i / 10 rem;
   }
   .p-r-#{$i} {
-    padding-right: $i / 10;
+    padding-right: $i / 10 rem;
   }
   .p-t-#{$i} {
-    padding-top: $i / 10;
+    padding-top: $i / 10 rem;
   }
   .p-b-#{$i} {
-    padding-bottom: $i / 10;
+    padding-bottom: $i / 10 rem;
   }
 
   .full-#{$i} {
