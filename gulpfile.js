@@ -30,16 +30,7 @@ gulp.task('bump', function () {
         .pipe(gulp.dest('./'));
 
 });
-/**
- * 将sass转化为css
- */
-gulp.task('sassfile', function () {
-    return gulp.src('./src/emui.scss')
-        .pipe(sass())
-        .pipe(min_css())
-        .pipe(rename({suffix: '.min'}))
-        .pipe(gulp.dest('./dist'));
-});
+
 
 /**
  * 打包压缩的css
