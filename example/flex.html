@@ -1,52 +1,87 @@
 <html>
 <head>
     <title>flex</title>
-    <link rel="stylesheet" href="../dist/emui.css">
+    <link rel="stylesheet" href="../dist/emui.min.css">
     <meta name="viewport"
           content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no"/>
+
+    <style>
+        .container {
+            width: 300px;
+            height: 500px;
+            border: 1px solid #000;
+            display: inline-block;
+        }
+
+        .div1 {
+            background-color: red;
+        }
+
+        .div2 {
+            background-color: blue;
+        }
+
+        .div3 {
+            background-color: green;
+        }
+    </style>
 </head>
 <body>
-<div class="col">
-    <div style="background-color: red;" class="col-cell-1">
-        <div class="row ">
-            <div style="background-color: red" class="row-cell-1">12</div>
-            <div style="background-color: #00aee2" class="row-cell-1">2</div>
-            <div style="background-color: #4cda60" class="row-cell-1">3</div>
+<div class="container ">
+    <div class="row">
+        <div class="div1 row-cell-1 ">
+            1
+        </div>
+        <div class="div2 row-cell-1 ">
+            2
+        </div>
+        <div class="div3 row-cell-1">
+            3
         </div>
     </div>
-    <div style="background-color: #4cda60" class="col-cell-1 row align-top">
-        <div class="row-cell-1 col ">
-            <div class="col-cell-1">1</div>
-            <div class="col-cell-1">2</div>
-            <div class="col-cell-1">3</div>
-        </div>
+</div>
 
-        <div class="row-cell-1 row">
-            <div class="row-cell-1">1</div>
-            <div class="row-cell-1 col">
-                <div class="col-cell-1">1</div>
-                <div class="col-cell-2">2</div>
-                <div class="col-cell-2">3</div>
-            </div>
+<div class="container ">
+    <div class="row row-start">
+        <div class="div1 row-cell-1 ">
+            1
         </div>
-        <div class="row-cell-1">
-
+        <div class="div2 row-cell-1 ">
+            2
         </div>
-        <!--<div class="row ">-->
-        <!--<div style="background-color: red" class="row-cell-1">12</div>-->
-        <!--<div style="background-color: #00aee2" class="row-cell-1">2</div>-->
-        <!--<div style="background-color: #4cda60" class="row-cell-1">3</div>-->
-        <!--</div>-->
-    </div>
-    <div style="background-color: #2b71a9" class="col-cell-1">
-        <div class="row ">
-            <div style="background-color: red" class="row-cell-1">12</div>
-            <div style="background-color: #00aee2" class="row-cell-1">2</div>
-            <div style="background-color: #4cda60" class="row-cell-1">3</div>
+        <div class="div3 row-cell-3 ">
+            3
         </div>
     </div>
+</div>
 
 
+<div class="container ">
+    <div class="col ">
+        <div class="div1  ">
+            1
+        </div>
+        <div class="div2  ">
+            2
+        </div>
+        <div class="div3  ">
+            3
+        </div>
+    </div>
+</div>
+
+<div class="container ">
+    <div class="col " style="height: 100%">
+        <div class="div1  ">
+            1
+        </div>
+        <div class="div2  ">
+            2
+        </div>
+        <div class="div3  cel-full">
+            3
+        </div>
+    </div>
 </div>
 
 </body>

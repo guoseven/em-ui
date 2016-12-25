@@ -14,13 +14,15 @@
   flex-direction: row-reverse;
 }
 
-.align-top {
+.row-start {
   align-items: flex-start;
 }
 
-.align-bottom {
+.row-end {
   align-items: flex-end;
 }
+
+
 @for $i from 1 through 5 {
   .row-cell-#{$i} {
     flex-grow: $i;
@@ -41,4 +43,9 @@
     text-align: center;
     width: 100%;
   }
+}
+
+
+.cel-full{
+  flex-basis: 100%;
 }
