@@ -69,16 +69,19 @@
   flex-direction: column;
   align-content: stretch;
   width: 100%;
-  height: 100%;
 }
 
 .cell-full {
   flex-basis: 100%;
   width: 100%;
+  height: 100%;
   text-align: center;
   overflow: hidden;
 }
 
+.col-match{
+  height:100%;
+}
 .cell-scroll-y {
   height: 100%;
   overflow-y: scroll;
@@ -87,7 +90,9 @@
 .cell-scroll-x {
   width: 100%;
   overflow-x: scroll;
+  white-space:nowrap;
 }
 .col-full{
   width: 100%;
+  text-align: center;
 }

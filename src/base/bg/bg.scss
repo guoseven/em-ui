@@ -1,0 +1,28 @@
+@import "../../global/rem";
+@import "../../global/color";
+
+.bg-primary {
+  background-color: map_get($primary_color, normal);
+}
+
+.bg-success {
+  background-color: map_get($success_color, normal);
+
+}
+
+.bg-warning {
+  background-color: map_get($warning_color, normal);
+
+}
+
+.bg-danger {
+  background-color: map_get($danger_color, normal);
+}
+
+.bg-info {
+  background-color: map_get($info_color, normal);
+}
+
+.bg-default {
+  background-color: map_get($default_color,normal);
+}
