@@ -15,7 +15,7 @@ gulp.task('watch', function () {
             baseDir: "."
         }
     });
-    gulp.watch("src/*/*/*.scss", ['sassfile']).on('change', reload);
+    gulp.watch("src/*/*/*.scss", ['build']).on('change', reload);
     gulp.watch("src/example/*.html").on('change', reload);
 });
 /**
