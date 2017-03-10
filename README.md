@@ -1,12 +1,44 @@
-### EMUI -- 简单的移动端适应UI
-===
-#### 1. 概述
-> 为了学习移动UI而创建的项目，模仿`bootstrapt`和`WeUI`
+This repository is no longer maintained. 
+============
 
-#### 2. 文件分布
+Herring Cove
+============
 
-- doc
-- example
-- src
-    - base 基本组件
-    - global 全局的一些设置
+Herring Cove is a clean and responsive theme for Jekyll. 
+
+
+### Overview 
+
+* Fixed Sidebar with social links
+* Minimal design 
+* Comments by Disqus
+* Social Sharing abilities 
+* Easy to configure
+* Based on Bootstrap
+
+### Screenshots
+
+![screenshot](/images/screenshot1.png)
+![screenshot](/images/screenshot2.png)
+
+### Setup
+
+1. Install Jekyll
+2. Fork or [download](https://github.com/arnp/herring-cove/archive/master.zip) this theme repo
+3. Edit the `_config.yml` file
+
+You can change the showcase image by replacing `showcase.jpg` file in the `images` folder. I'll try to find a better way to do this soon. 
+
+### Download
+
+[download](https://github.com/arnp/herring-cove/archive/master.zip)
+
+### License
+* [MIT](http://opensource.org/licenses/MIT)
+
+-------------
+Herring Cove is always a work in progress and as such, I hope to clean up the code and add features as time permits. Feel free to add your own additions. 
+
+*What's with the name?*
+
+[Herring Cove](http://www.capecodbeachchair.com/beachguide/index.cfm?page=3&BeachID=5) is a beach on Cape Cod in Provincetown, Massachusetts. If you're in the area, be sure to check it out!

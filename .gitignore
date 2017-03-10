@@ -1,8 +1,2 @@
-# Created by .ignore support plugin (hsz.mobi)
-EMUI.iml
-.idea
-src/*/*.css
-.sass-cache
-!emui.css
-node_modules
-npm-debug.log.*
+_site
+*~

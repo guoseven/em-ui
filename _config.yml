@@ -1,0 +1,32 @@
+name: Follow Winter
+author: Follow Winter
+baseurl: /herring-cove
+description: 一个简单的移动端css框架
+github: https://github.com/followWinter/em-ui
+email: lyxxxx05@gmail.com
+location: 42°2'16"N   70°12'47"W
+disqus: diqus-username
+
+
+
+##Make sure to edit the above fields, especially for disqus.
+
+
+
+
+highlighter: rouge
+markdown: redcarpet
+redcarpet:
+  extensions: ["tables"]
+
+defaults:
+  - scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "default"
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
