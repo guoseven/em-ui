@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../dist/emui.min.css">
+    <title>Title</title>
+    <link rel="stylesheet" href="./style.css">
+    <style>
+        .page {
+            overflow: hidden;
+            width: 300px;
+            height: 500px;
+            border: 1px solid #eeeeee;
+            display: inline-block;
+            margin: 10px;;
+            vertical-align: top;
+            font-family: "Microsoft YaHei", sans-serif;
+        }
+
+        .page-small {
+            width: 300px;
+            height: 300px;
+            border: 1px solid #eeeeee;
+            display: inline-block;
+            margin: 10px;;
+            vertical-align: top;
+        }
+
+        .box {
+            min-width: 30px;
+            min-height: 30px;
+            color: #ffffff;
+            text-align: center;
+        }
+
+        .bg1 {
+            background-color: #E91E63;
+        }
+
+        .bg2 {
+            background-color: #9C27B0;
+
+        }
+
+        .bg3 {
+            background-color: #2196F3;
+
+        }
+
+        .bg4 {
+            background-color: #673AB7;
+        }
+
+        .bg5 {
+            background-color: #009688;
+        }
+
+    </style>
+</head>
+<body>
+<!--//横向flex-->
+<p>横向flex|纵向flex</p>
+<div class="page-small">
+    <div class="row">
+        <div class="box bg1">row</div>
+        <div class="box bg2">row</div>
+        <div class="box bg3">row</div>
+    </div>
+</div>
+<!--//纵向flex-->
+<div class="page-small">
+    <div class="col">
+        <div class="box bg1">col</div>
+        <div class="box bg2">col</div>
+        <div class="box bg3">col</div>
+    </div>
+</div>
+<br>
+<!--//横向flex 对齐方式-->
+<div class="page-small">
+    <div class="row content-start">
+        <div class="box bg1">row</div>
+        <div class="box bg2">row</div>
+        <div class="box bg3">row</div>
+    </div>
+</div>
+<div class="page-small">
+    <div class="row content-end">
+        <div class="box bg1">row</div>
+        <div class="box bg2">row</div>
+        <div class="box bg3">row</div>
+    </div>
+</div>
+<div class="page-small">
+    <div class="row  content-around">
+        <div class="box bg1">row</div>
+        <div class="box bg2">row</div>
+        <div class="box bg3">row</div>
+    </div>
+</div>
+<div class="page-small">
+    <div class="row  content-between">
+        <div class="box bg1">row</div>
+        <div class="box bg2">row</div>
+        <div class="box bg3">row</div>
+    </div>
+</div>
+
+<!--//纵向flex对齐工具-->
+<div class="page-small">
+    <div class="col  content-start">
+        <div class="box bg1">row</div>
+        <div class="box bg2">row</div>
+        <div class="box bg3">row</div>
+    </div>
+</div>
+<div class="page-small">
+    <div class="col  content-end">
+        <div class="box bg1">row</div>
+        <div class="box bg2">row</div>
+        <div class="box bg3">row</div>
+    </div>
+</div>
+<div class="page-small">
+    <div class="col  content-around">
+        <div class="box bg1">row</div>
+        <div class="box bg2">row</div>
+        <div class="box bg3">row</div>
+    </div>
+</div>
+<div class="page-small">
+    <div class="col  content-between">
+        <div class="box bg1">row</div>
+        <div class="box bg2">row</div>
+        <div class="box bg3">row</div>
+    </div>
+</div>
+<!--比例工具-->
+<div class="page-small">
+    <div class="row   ">
+        <div class="box bg1 cell-1">cell-1</div>
+        <div class="box bg2 cell-1">cell-1</div>
+        <div class="box bg3 cell-1">cell-1</div>
+    </div>
+    <div class="row   ">
+        <div class="box bg1 cell-1">cell-1</div>
+        <div class="box bg2 cell-5">cell-5</div>
+        <div class="box bg3 cell-1">cell-1</div>
+    </div>
+
+    <div class="row   ">
+        <div class="box bg1 cell-1">cell-1</div>
+        <div class="box bg2 cell-2">cell-2</div>
+        <div class="box bg3 cell-3">cell-3</div>
+    </div>
+</div>
+<div class="page-small">
+    <div style="width: 30px;height:100%;display: inline-block;vertical-align: top">
+        <div class="col   ">
+            <div class="box bg1 cell-1">cell-1</div>
+            <div class="box bg2 cell-1">cell-1</div>
+            <div class="box bg3 cell-1">cell-1</div>
+        </div>
+    </div>
+
+    <div style="width: 30px;height:100%;display: inline-block;vertical-align: top">
+        <div class="col   ">
+            <div class="box bg1 cell-1">cell-1</div>
+            <div class="box bg2 cell-2">cell-2</div>
+            <div class="box bg3 cell-3">cell-3</div>
+        </div>
+    </div>
+
+    <div style="width: 30px;height:100%;display: inline-block;vertical-align: top">
+        <div class="col   ">
+            <div class="box bg1">col</div>
+            <div class="box bg2 cell-1">cell-1</div>
+            <div class="box bg3 "></div>
+        </div>
+    </div>
+</div>
+
+
+<!--单个子元素相对交轴对齐方式-->
+<div class="page-small">
+    <div class="row ">
+        <div class="box bg1 cell-start">self-start</div>
+        <div class="box bg2 ">default</div>
+        <div class="box bg3 cell-end">self-end</div>
+        <div class="box bg3 cell-stretch">self-stretch</div>
+    </div>
+</div>
+<div class="page-small">
+    <div class="col ">
+        <div class="box bg1 cell-start">self-start</div>
+        <div class="box bg2 ">default</div>
+        <div class="box bg3 cell-end">self-end</div>
+        <div class="box bg3 cell-stretch">self-stretch</div>
+    </div>
+</div>
+<!--子元素相对交轴对齐方式-->
+<div class="page-small">
+    <div class="row  cross-start">
+        <div class="box bg1 ">cell-start</div>
+        <div class="box bg2 ">cell-start</div>
+        <div class="box bg3 ">cell-start</div>
+    </div>
+</div>
+<div class="page-small">
+    <div class="row  cross-end">
+        <div class="box bg1 ">cell-end</div>
+        <div class="box bg2 ">cell-end</div>
+        <div class="box bg3 ">cell-end</div>
+    </div>
+
+</div>
+<div class="page-small">
+    <div class="row  cross-stretch">
+        <div class="box bg1 ">cell-stretch</div>
+        <div class="box bg2 ">cell-stretch</div>
+        <div class="box bg3 ">cell-stretch</div>
+    </div>
+</div>
+<div class="page-small">
+    <div class="col  cross-start">
+        <div class="box bg1 ">cell-start</div>
+        <div class="box bg2 ">cell-start</div>
+        <div class="box bg3 ">cell-start</div>
+        <div class="box bg3 ">cell-start</div>
+    </div>
+</div>
+<div class="page-small">
+    <div class="col  cross-end">
+        <div class="box bg1 ">cell-end</div>
+        <div class="box bg2 ">cell-end</div>
+        <div class="box bg3 ">cell-end</div>
+        <div class="box bg3 ">cell-end</div>
+    </div>
+</div>
+<div class="page-small">
+    <div class="col  cross-stretch">
+        <div class="box bg1 ">cell-stretch</div>
+        <div class="box bg2 ">cell-stretch</div>
+        <div class="box bg3 ">cell-stretch</div>
+        <div class="box bg3 ">cell-stretch</div>
+    </div>
+</div>
+<!--滚动工具-->
+<div class="page-small">
+    <div class="row ">
+        <div class="cell-scroll-x">横向滚动横向滚动横向滚动横向滚动横向滚动横向滚动横向滚动横向滚动横向滚动横向滚动横向滚动横向滚动横向滚动</div>
+    </div>
+
+</div>
+<div class="page-small">
+    <div class="col container-full">
+        <div class="cell-scroll-y">
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+            <div>4</div>
+            <div>5</div>
+            <div>6</div>
+            <div>7</div>
+            <div>8</div>
+            <div>9</div>
+            <div>10</div>
+            <div>11</div>
+            <div>12</div>
+            <div>13</div>
+            <div>14</div>
+        </div>
+    </div>
+</div>
+
+<!--//页面实战 登录页面-->
+<div class="page page-login ">
+    <div class="col">
+        <h1>登录</h1>
+        <input type="text" placeholder="账户">
+        <input type="password" placeholder="密码">
+        <div class="row content-around">
+            <button>登录</button>
+            <button>注册</button>
+        </div>
+    </div>
+</div>
+<!--个人中心-->
+<div class="page ">
+    <div class="col container-full">
+        <div class="cell-1 bg1  col">
+            <img src="icon.jpg" alt="" style="width: 100px;border-radius: 100%">
+            <p style="color: #ffffff">十里桃花不如睡你</p>
+        </div>
+        <div class="cell-4 col content-start cell-full">
+            <div class="cell-full" style="border-bottom: 1px solid #eeeeee">
+                我的收藏
+            </div>
+            <div class="cell-full" style="border-bottom: 1px solid #eeeeee">
+                我的喜好
+            </div>
+            <div class="cell-full" style="border-bottom: 1px solid #eeeeee">
+                我的文章
+            </div>
+            <div class="cell-full" style="border-bottom: 1px solid #eeeeee">
+                关于
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--//主页-->
+<div class="page">
+    <div class="col container-full">
+        <div class="row bg1 cell-full" style="color: #ffffff">
+            <p class=" ">主页</p>
+        </div>
+        <div class="cell-5 cell-full cell-scroll-y">
+            <div style="height: 150px;overflow: hidden" class="cell-full">
+                <img src="./banner.jpg" alt="" width="100%">
+            </div>
+            <div class="cell-full">
+                <div class="row" style="height: 60px;border-bottom: 1px solid #eeeeee">
+                    <div class="cell-1 col ">
+                        <img src="./icon.jpg" alt="" width="50px">
+                    </div>
+                    <div class="cell-3" style="text-align: left">
+                        <p style="line-height: 24px;margin: 0">文章标题</p>
+                        <p style="font-size: 12px;line-height: 14px;margin: 0;color: #aaaaaa;">文章简介</p>
+                    </div>
+                </div>
+                <div class="row" style="height: 60px;border-bottom: 1px solid #eeeeee">
+                    <div class="cell-1 col ">
+                        <img src="./icon.jpg" alt="" width="50px">
+                    </div>
+                    <div class="cell-3" style="text-align: left">
+                        <p style="line-height: 24px;margin: 0">文章标题</p>
+                        <p style="font-size: 12px;line-height: 14px;margin: 0;color: #aaaaaa;">文章简介</p>
+                    </div>
+                </div>
+                <div class="row" style="height: 60px;border-bottom: 1px solid #eeeeee">
+                    <div class="cell-1 col ">
+                        <img src="./icon.jpg" alt="" width="50px">
+                    </div>
+                    <div class="cell-3" style="text-align: left">
+                        <p style="line-height: 24px;margin: 0">文章标题</p>
+                        <p style="font-size: 12px;line-height: 14px;margin: 0;color: #aaaaaa;">文章简介</p>
+                    </div>
+                </div>
+                <div class="row" style="height: 60px;border-bottom: 1px solid #eeeeee">
+                    <div class="cell-1 col ">
+                        <img src="./icon.jpg" alt="" width="50px">
+                    </div>
+                    <div class="cell-3" style="text-align: left">
+                        <p style="line-height: 24px;margin: 0">文章标题</p>
+                        <p style="font-size: 12px;line-height: 14px;margin: 0;color: #aaaaaa;">文章简介</p>
+                    </div>
+                </div>
+                <div class="row" style="height: 60px;border-bottom: 1px solid #eeeeee">
+                    <div class="cell-1 col ">
+                        <img src="./icon.jpg" alt="" width="50px">
+                    </div>
+                    <div class="cell-3" style="text-align: left">
+                        <p style="line-height: 24px;margin: 0">文章标题</p>
+                        <p style="font-size: 12px;line-height: 14px;margin: 0;color: #aaaaaa;">文章简介</p>
+                    </div>
+                </div>
+                <div class="row" style="height: 60px;border-bottom: 1px solid #eeeeee">
+                    <div class="cell-1 col ">
+                        <img src="./icon.jpg" alt="" width="50px">
+                    </div>
+                    <div class="cell-3" style="text-align: left">
+                        <p style="line-height: 24px;margin: 0">文章标题</p>
+                        <p style="font-size: 12px;line-height: 14px;margin: 0;color: #aaaaaa;">文章简介</p>
+                    </div>
+                </div>
+                <div class="row" style="height: 60px;border-bottom: 1px solid #eeeeee">
+                    <div class="cell-1 col ">
+                        <img src="./icon.jpg" alt="" width="50px">
+                    </div>
+                    <div class="cell-3" style="text-align: left">
+                        <p style="line-height: 24px;margin: 0">文章标题</p>
+                        <p style="font-size: 12px;line-height: 14px;margin: 0;color: #aaaaaa;">文章简介</p>
+                    </div>
+                </div>
+                <div class="row" style="height: 60px;border-bottom: 1px solid #eeeeee">
+                    <div class="cell-1 col ">
+                        <img src="./icon.jpg" alt="" width="50px">
+                    </div>
+                    <div class="cell-3" style="text-align: left">
+                        <p style="line-height: 24px;margin: 0">文章标题</p>
+                        <p style="font-size: 12px;line-height: 14px;margin: 0;color: #aaaaaa;">文章简介</p>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+        <div class=" cell-full row content-around bg1" style="color: #ffffff">
+            <div>主页</div>
+            <div>推荐</div>
+            <div>我的</div>
+        </div>
+    </div>
+</div>
+
+
+<!--//文章详情-->
+<div class="page">
+    <div class="col container-full">
+        <div class="row cell-full content-around bg1" style="color: #ffffff">
+            <div class="cell-1">返回</div>
+            <div class="cell-2">文章详情</div>
+            <div class="cell-1">评论</div>
+        </div>
+        <div class="cell-full cell-scroll-y"  style="padding: 10px;box-sizing: border-box">
+            <h3 style="border-bottom: #aaaaaa">相忘于江湖</h3>
+            <div class="row content-between" style="margin: 10px;font-size: 10px;color: #aaaaaa;border-bottom: 1px solid #eeeeee;margin-bottom: 10px">
+                <p>十里桃花不如睡你</p>
+                <p>2017-03-09</p>
+            </div>
+            <div  style="line-height: 20px;">
+                彼处桃花盛开，绚烂满天凄艳的红霞，你笑得清浅从容，而我却仍在这里守望，落英如雨，印证我佛拈花一笑的了然。爱，如此繁华，如此寂寥。
+                起身，然后落座，知道，与你的缘份，也只有这一盏茶而已。结局早已先我抵达，蛰伏于五月的一场雨，十分钟，或许不够一生回忆，却足以老去所有年华。
+
+                五月的天空泼满青釉，你瓷青的衣襟在风里飘拂。阳光遍地，你信手拾起一枚，放进我手里，说：“我爱你！”三字成谶，我被你一语中的，从此，沉重的枷锁背负我每个梦境，明知无望，却固守着仅存的坚持，以为，终究可以将你守候成最美的风景。
+
+                若青春可以作注，我已押上一切筹码，只待你开出一幅九天十地的牌九，示我以最终的输赢。谁知，你竟中途离开，衣袖随长风斜过，拂乱了赌局。无人坐庄，这一局牌宛然三月桃花，错落于五月的湖面，飘散了满湖的灰飞烟灭。
+                遂重新检视命运，看它如何写就这一段际遇。暮色四合，天边的浮云已渐暗。人走，茶亦凉，有明月，照你的背影涉水而过，十丈红尘饰你以锦绣，千朵芙蓉衣你以华裳，而你竟无半点回顾，就这样，轻易穿越我一生的沧桑。
+
+                摊开手掌，阳光菲薄，一如你的许诺。太爱你，所以希望你以许诺勾兑眼泪，以永恒明见柔情，却不曾料到，岁月将你的微笑做了伏笔，只待风沙四起，尘埃遍野，便折戟扬刀，杀一个回马枪，陷我于永无翻身之日的险境。
+
+                没有狂歌当哭的勇气，却在倒地时明心见性，瞥见万里风沙之上，有人沉腕拨镫，疾书一行字：“相忘于江湖”。朱砂如血，触目惊心。
+
+
+                忘，谈何容易？烟水亭边，你用青色丝绦挽就了我的心结，江南的水光潋滟了你的眼，你已是我一生的水源，润我干涸的视线，柔我冷硬的心痂，忘记你，不如忘记我自己。
+
+                而夜幕，却依旧如期降临，深冬的风替换曾经的烟花三月，举目四望，偌大的桌边只我一人，空对，一盏冰冷的茶。
+            </div>
+
+        </div>
+
+    </div>
+</div>
+</body>
+
+</html>

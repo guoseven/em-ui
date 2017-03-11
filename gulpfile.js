@@ -15,8 +15,8 @@ gulp.task('watch', function () {
             baseDir: "."
         }
     });
-    gulp.watch("src/*/*/*.scss", ['build']).on('change', reload);
-    gulp.watch("src/example/*.html").on('change', reload);
+    gulp.watch("src/**/*.scss", ['build']).on('change', reload);
+    gulp.watch("src/example/**/*.html").on('change', reload);
 });
 /**
  * 自动更新版本号
