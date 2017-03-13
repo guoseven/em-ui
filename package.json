@@ -1,8 +1,8 @@
 {
   "name": "@followwinter/em-ui",
-  "version": "1.0.22",
+  "version": "1.0.26",
   "description": " 为了学习移动UI而创建的项目，模仿`bootstrapt`和`WeUI`",
-  "main": "index.scss",
+  "main": "./dist/emui.min.css",
   "directories": {
     "doc": "doc",
     "example": "example"
@@ -24,14 +24,18 @@
   },
   "homepage": "https://github.com/followWinter/em-ui#readme",
   "devDependencies": {
+    "autoprefixer": "^6.7.7",
     "browser-sync": "^2.9.11",
+    "cssnext": "^1.8.4",
     "del": "^2.2.2",
     "gulp": "^3.9.1",
     "gulp-bump": "^2.5.1",
     "gulp-livereload": "^3.8.1",
     "gulp-minify-css": "^1.2.4",
+    "gulp-postcss": "^6.3.0",
     "gulp-rename": "^1.2.2",
     "gulp-sass": "^2.3.2",
-    "gulp-watch": "4.3.5"
+    "gulp-watch": "4.3.5",
+    "precss": "^1.4.0"
   }
 }
