@@ -1,14 +1,21 @@
 html{
   font-size:20px;
+  margin: 0;
+  padding: 0;
+}
+*{
+  margin: 0;
+  padding: 0;
 }
 body{
   font-size: 0.8rem;
-  margin: 0px;
-  line-height: 2rem;
-  font-family: "Microsoft YaHei";
+  margin: 0;
+  padding: 0;
+  font-family: "Microsoft YaHei",sans-serif;
 }
 p{
   line-height: 2rem;
-  margin-top: 0.1rem;
-  margin-bottom: 0.1rem;
+}
+img{
+  display: block;
 }
