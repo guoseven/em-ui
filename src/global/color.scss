@@ -1,7 +1,7 @@
-$primary_color: (normal:#3498db, active:#2980b9, disable:#8fd2ea);
-$success_color: (normal:#2ecc71, active:#27ae60, disable:#76e2a1);
-$warning_color: (normal:#f1c40f, active:#f39c12, disable:#ead88b);
-$danger_color: (normal:#e74c3c, active:#c0392b, disable:#efaca8);
-$info_color: (normal:#9b59b6, active:#8e44ad, disable:#cea5e5);
-$default_color: (normal:#ecf0f1, active:#bdc3c7, disable:#ffffff);
+$primary_color: (normal:#3498db, active:#2980b9, disable:#8fd2ea) !default;
+$success_color: (normal:#2ecc71, active:#27ae60, disable:#76e2a1) !default;
+$warning_color: (normal:#f1c40f, active:#f39c12, disable:#ead88b) !default;
+$danger_color: (normal:#e74c3c, active:#c0392b, disable:#efaca8) !default;
+$info_color: (normal:#9b59b6, active:#8e44ad, disable:#cea5e5) !default;
+$default_color: (normal:#ecf0f1, active:#bdc3c7, disable:#ffffff) !default;
 

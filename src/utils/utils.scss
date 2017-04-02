@@ -1,38 +1,42 @@
+@import "px2rem";
 @for $i from 1 through 5 {
   .m-l-#{$i} {
-    margin-left: 0.1*$i+rem;
+    margin-left: px2em($i*10);
   }
   .m-r-#{$i} {
-    margin-right: 0.1*$i+rem;
+    margin-right: px2em($i*10);
   }
   .m-t-#{$i} {
-    margin-top: 0.1*$i+rem;
+    margin-top: px2em($i*10);
   }
   .m-b-#{$i} {
-    margin-bottom: 0.1*$i+rem;
+    margin-bottom: px2em($i*10);
+  }
+  .m-#{$i} {
+    margin: px2em($i*10);
   }
 
   .p-l-#{$i} {
-    padding-left: 0.1*$i+rem;
+    padding-left: px2em($i*10);
   }
   .p-r-#{$i} {
-    padding-right: 0.1*$i+rem;
+    padding-right: px2em($i*10);
   }
   .p-t-#{$i} {
-    padding-top: 0.1*$i+rem;
+    padding-top: px2em($i*10);
   }
   .p-b-#{$i} {
-    padding-bottom: 0.1*$i+rem;
+    padding-bottom: px2em($i*10);
   }
-
-
+  .p-#{$i} {
+    padding-bottom: px2em($i*10);
+  }
 
   .full-#{$i} {
     width: 10%*$i;
   }
 
 }
-
 .inline-block {
   display: inline-block;
 }
@@ -41,14 +45,14 @@
   display: inline-block;
 }
 
-.text-center {
+.t-c {
   text-align: center;
 }
 
-.text-left {
+.t-l {
   text-align: left;
 }
 
-.text-right {
+.t-r {
   text-align: right;
 }
