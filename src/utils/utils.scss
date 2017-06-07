@@ -14,22 +14,32 @@
   }
   .m-#{$i} {
     margin: px2em($i*10);
+
   }
 
   .p-l-#{$i} {
     padding-left: px2em($i*10);
+    box-sizing: border-box;
+
   }
   .p-r-#{$i} {
     padding-right: px2em($i*10);
+    box-sizing: border-box;
+
   }
   .p-t-#{$i} {
     padding-top: px2em($i*10);
+    box-sizing: border-box;
+
   }
   .p-b-#{$i} {
     padding-bottom: px2em($i*10);
+    box-sizing: border-box;
+
   }
   .p-#{$i} {
-    padding-bottom: px2em($i*10);
+    padding: px2em($i*10);
+    box-sizing: border-box;
   }
 
   .full-#{$i} {
